@@ -34,7 +34,7 @@ public final class GetAverageGradeUseCase {
 
         for (String member: team.getMembers()) {
             count++;
-            sum += useCase.getGrade(member, "207").getGrade();
+            sum += useCase.getGrade(member, course).getGrade();
         }
 
         if (count == 0) {
